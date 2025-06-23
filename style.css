@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #6F4E37; /* Coffee Brown */
+    --secondary-color: #F5F5DC; /* Beige */
+    --dark-color: #362222;
+    --light-color: #FDFDFD;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Navbar --- */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: var(--dark-color) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.navbar.scrolled {
+    background-color: rgba(253, 253, 253, 0.95) !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 1rem auto;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 30px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.btn-primary:hover {
+    background-color: #5a3e2b;
+    border-color: #5a3e2b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* --- Section Styling --- */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* --- About Section --- */
+#about img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Menu Section --- */
+#menu {
+    background-color: var(--light-color);
+}
+
+/* New container to allow horizontal scroll on mobile */
+.menu-tabs-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Ensure the ul inside does not wrap, so it can scroll */
+.menu-tabs-container .nav-pills {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    display: inline-flex; /* Use inline-flex for proper alignment */
+    padding-bottom: 15px; /* Add some space for scrollbar */
+}
+
+.nav-pills .nav-link {
+    background-color: var(--secondary-color);
+    color: var(--dark-color) !important;
+    margin: 0 5px;
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 8px 20px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--light-color) !important;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.menu-item-content h5 {
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+.menu-item-content p {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0;
+    color: #666;
+}
+.menu-item-price {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* --- Contact Section --- */
+.contact-info i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    padding: 40px 0;
+}
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: var(--light-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll; /* Fix for mobile responsiveness */
+        height: 80vh; /* Optional: adjust height for smaller screens */
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    #about .text-center {
+        text-align: left !important;
+    }
+    .menu-tabs-container .nav-pills{
+       justify-content: flex-start !important; /* Align tabs to the left on mobile */
+    }
+}
