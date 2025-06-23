@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Pura - Experience the Purest Brew</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Coffee Pura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1>Experience the Purest Brew</h1>
+                    <p class="lead">From the finest beans to your cup, we're dedicated to the art of coffee. Discover your perfect blend at Coffee Pura.</p>
+                    <a href="#menu" class="btn btn-primary btn-lg">View Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Us Section -->
+        <section id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Story</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="interior.jpg" alt="Coffee Pura Interior" class="img-fluid rounded-3 shadow">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Crafted with Passion, Served with Love</h3>
+                        <p>Coffee Pura was born from a simple idea: to create a space where people can enjoy truly exceptional coffee. We source our beans from sustainable farms around the world, roasting them in-house to bring out their unique flavors.</p>
+                        <p>Our baristas are more than just coffee makers; they are artisans dedicated to perfecting every single cup. Whether you're a connoisseur or just looking for a cozy spot to unwind, we welcome you to join our family.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Menu</h2>
+                    <h6><i>Not Just a Coffee,</i></h6>
+                    <h6><i>It's Love in a cup!</i></h6>
+                </div>
+                
+                <!-- Menu Navigation -->
+                <div class="menu-tabs-container">
+                    <ul class="nav nav-pills justify-content-center mb-5" id="menu-tabs" role="tablist">
+                        <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#classic" type="button" role="tab">CLASSIC</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#signature" type="button" role="tab">SIGNATURE</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#matcha" type="button" role="tab">MATCHA</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#lemon-tea" type="button" role="tab">LEMON TEA</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#flavor-latte" type="button" role="tab">FLAVOR LATTE</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#fruit-americano" type="button" role="tab">FRUIT AMERICANO</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#non-coffee" type="button" role="tab">NON-COFFEE</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#mojito" type="button" role="tab">MOJITO</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#food" type="button" role="tab">FOOD</button></li>
+                    </ul>
+                </div>
+
+                <!-- Menu Content -->
+                <div class="tab-content" id="menu-tab-content">
+                    <!-- Classic Tab -->
+                    <div class="tab-pane fade show active" id="classic" role="tabpanel">
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Espresso</h5></p></div><div class="menu-item-price">4,500 MMK</div></div></div></div>
+                         <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Latte</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                          <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Cappuccino</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                           <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Flat White</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                            <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Americano</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                    </div>
+                    <!-- Signature Tab -->
+                    <div class="tab-pane fade" id="signature" role="tabpanel">
+                         <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Coffee Pura Coffee</h5><p></p></div><div class="menu-item-price">8,000 MMK</div></div></div></div>
+                    </div>
+                    <!-- Matcha Tab -->
+                    <div class="tab-pane fade" id="matcha" role="tabpanel">
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Matcha Latte</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Matcha Yuzu</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Strawberry Matcha</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Coconut Matcha</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        
+                    </div>
+                    <!-- Lemon Tea Tab -->
+                    <div class="tab-pane fade" id="lemon-tea" role="tabpanel">
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Lemon Tea</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Passion Lemon Tea</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Honey Lemon Tea</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                    </div>
+                    <!-- Flavor Latte Tab -->
+                    <div class="tab-pane fade" id="flavor-latte" role="tabpanel">
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Caramel Latte</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Hazelnut Latte</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Vanilla Latte</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Mint Latte</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Spanish Latte</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Mocha</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Milo Mocha</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                    </div>
+                    <!-- Fruit Americano Tab -->
+                    <div class="tab-pane fade" id="fruit-americano" role="tabpanel">
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Pasion-Presso</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Tamarind-Presso</h5><p></p></div><div class="menu-item-price">7,500 MMk</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Coconut-Presso</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Apple-Presso</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Espresso-Lemonade</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Yuzu-Presso</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                    </div>
+                    <!-- Non-Coffee Tab -->
+                    <div class="tab-pane fade" id="non-coffee" role="tabpanel">
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Passion Lemonade</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Hawaiian Sunnise</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Lychee Berry</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Strawberry Latte</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Mango Latte</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Chocolate</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Mint Chocolate</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Milo</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+
+                    </div>
+                    <!-- Mojito Tab -->
+                    <div class="tab-pane fade" id="mojito" role="tabpanel">
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Virgin Mojito</h5><p></p></div><div class="menu-item-price">7,000 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Passion Mojito</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Strawberry Mojito</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Lychee Mojito</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Mango Mojito</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                        <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Pineapple Mojito</h5><p></p></div><div class="menu-item-price">7,500 MMK</div></div></div></div>
+                    </div>
+                    <!-- Food Tab -->
+                    <div class="tab-pane fade" id="food" role="tabpanel">
+                       <div class="row"><div class="col-lg-8 mx-auto"><div class="menu-item"><div class="menu-item-content"><h5>Avocado Toast</h5><p>Sourdough toast with fresh avocado, chili flakes, and salt.</p></div><div class="menu-item-price">$8.00</div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Visit Us</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <i data-feather="map-pin"></i>
+                        <h4 class="my-3">Address</h4>
+                        <p>62ND STREET, BETWEEN 28TH STREET AND 29TH STREET<br>MANDALAY , MYANMAR</p>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <i data-feather="clock"></i>
+                        <h4 class="my-3">Opening Hours</h4>
+                        <p>OPEN DAILY: 10am - 6pm</p>
+                    </div>
+                    <div class="col-md-4">
+                         <i data-feather="phone"></i>
+                        <h4 class="my-3">Contact</h4>
+                        <p>Email: coffeepuramdy@gmail.com<br>Phone: +959763056839</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Coffee Pura. All Rights Reserved.</p>
+            <p><a href="#hero">Back to top</a></p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
